@@ -10,8 +10,8 @@ export default function Home({navItem, activeLink}){
                 Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
                 </p>
             </div>
-                <div onClick={activeLink} className="2" id="explore" data-aos="fade-left" data-aos-duration="3000">
-                    <div className="parg">
+                <div   onClick={activeLink} className="2" id="explore">
+                    <div data-aos="fade-left" data-aos-duration="3000" className="parg">
                         <p>EXPLORE</p>
                     </div>
                 </div>
