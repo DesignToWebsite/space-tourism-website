@@ -5,7 +5,7 @@ export default function Nav({nav, navMenu, navItem, activeLink}) {
         <nav className="navbar">
             <div className="logo">
                 <a href="#">
-                    <img src="../assets/shared/logo.svg" alt="logo"/>
+                    <img src="./assets/shared/logo.svg" alt="logo"/>
                 </a>
                 <div className="line"></div>
             </div>
