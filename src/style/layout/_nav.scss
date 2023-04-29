@@ -1,0 +1,103 @@
+nav.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // width: 100vw;
+    width: 100%;
+    padding: 30px 0 35px 30px;
+    @include small-screen{
+        padding-right: 30px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        img{
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .menu_item{
+        min-width: 55%;
+        display: flex;
+        align-items: end;
+        position: relative;
+        transition: all .5s linear ;
+        right: 0;
+        @include small-screen{
+            width: 0px;
+            min-width: 0;
+            overflow: hidden;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            align-items: baseline;
+            // display: none;
+        }
+        ul{
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            padding-right: 3em;
+            padding-left: 1.2em;
+            backdrop-filter: blur(40.7742px);  
+            @include small-screen{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                min-width: 70%;
+                height: 100vh;
+                position: absolute;
+                top: 0em;
+                padding: 5em 0;
+            }
+            @include x-small-screen{
+                width: 80%;
+            }          
+            li{
+                margin-right: 50px;
+                padding : 38px 0;
+                &:hover, &.active{
+                    border-bottom: 2px solid white;
+
+                }
+                @include small-screen{
+                    border: none;
+                    padding: 2em 3em;
+                }
+                a{
+                    color: $white;
+                    font-family: $barlow;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                    span{
+                        font-weight: 700;
+                        margin-right: 11px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+}
+.menu_icon{
+    display: none;
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    @include small-screen{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+}
+.show{
+    width: 100% !important;
+    min-width: 90%;
+}

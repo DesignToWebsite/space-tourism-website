@@ -1,0 +1,84 @@
+ul {
+  display: flex;
+  li{
+    list-style-type: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p{
+  font-size: 18px;
+  font-weight: normal;
+  font-family: $barlow;
+  @include small-screen{
+    font-size: 15px;
+  }
+}
+
+h1,h2,h3{
+  font-weight: 400;
+}
+h1,h2{
+  font-family: $bellefair;
+
+}
+h1{
+  font-size: 150px;
+  line-height: 150px;
+}
+h2{
+  font-size: 80px;
+  line-height: 91px;
+}
+h3, nav{
+  font-family: $barlowCond;
+  line-height: 24px;
+  letter-spacing: 3.38px;
+}
+
+.active{
+  border-bottom: 2px solid white;
+}
+h3{
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+        @include medium-screen{
+            font-size: 20px;
+            line-height:3.38px;
+        }
+        @include small-screen{
+            text-align: center;
+            font-size: 16px;
+            line-height: 19.2px;
+        }
+}
+
+h2{
+  @include medium-screen{
+      font-size: 40px;
+      line-height:45.84px;
+  }
+  @include small-screen{
+      font-size: 24px;
+      line-height: 27.5px;
+  }
+}
+
+h1{
+  @include medium-screen{
+      font-size: 40px;
+      line-height:45.84px;
+  }
+  @include small-screen{
+      font-size: 24px;
+      line-height: 27.5px;
+  }
+}

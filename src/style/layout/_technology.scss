@@ -1,0 +1,69 @@
+.tech{
+    h3{
+        margin: 0 0 1em 0;
+    }
+    h2{
+        font-family: $barlowCond;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        
+    }
+    h1{
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .dest {
+        .content{
+            width: 100%;
+            display: flex;
+            .nav_dest{
+                display: flex;
+                align-items: center;                
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-between;
+                    @include medium-screen{
+                        flex-direction: row;
+                    }
+                    li{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        color: rgb(255, 255, 255);
+                        font-family: $bellefair;
+                        font-size: 32px;
+                        line-height: 37px;
+                        letter-spacing: 2px;
+                        text-align: center;
+                        padding: 22px;
+                        margin-bottom: 25px;
+                        border: rgba(255, 255, 255,.25) 1px solid;
+                        &.active{
+                            opacity: 1;
+                            color: black;
+                            background-color: white;
+                        }
+                        @include small-screen{
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+            .item{
+                order: 2;
+            }
+        }
+        .img{
+            img{
+                width: 100%;
+            }
+            @include medium-screen{
+                margin: 2em auto;
+            }
+        }
+    } 
+}

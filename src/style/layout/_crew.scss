@@ -1,0 +1,47 @@
+.crew{
+    padding-bottom: 0;
+    h3{
+        margin: 0;
+        margin-bottom: 2em;
+        font-size: 28px;
+        line-height: 33.6px;
+        letter-spacing: 4.72px;
+        
+    }
+    h2{
+        font-family: $bellefair;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 37px;
+        opacity: 0.5;
+        
+    }
+    .dest {
+        align-items: flex-start;
+        .content{
+            margin-top: 3em;
+            width: 100%;
+            .nav_dest{
+                ul{
+                    li{
+                        background-color: white;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        padding: 0;
+                        opacity: .17;
+                        &.active{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .img{
+            img{
+                width: 100%;
+            }
+        }
+    }   
+   
+}
