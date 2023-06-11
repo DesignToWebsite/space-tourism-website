@@ -24,7 +24,7 @@ export default function Technology() {
                     {tech.map(item => {
                         if (item.active) {
                             return (
-                                <div data-aos="slide-up" data-aos-duration="2000" className="item">
+                                <div data-aos="slide-up" data-aos-duration="3000" className="item">
                                     <h2>THE TERMINOLOGY…</h2>
                                     <h1>{item.name}</h1>
                                     <p>{item.description}</p>
@@ -53,7 +53,7 @@ export default function Technology() {
                 <div className="img">
                     {tech.map(item => {
                         if(item.active)
-                            return(<img data-aos="slide-up" data-aos-duration="2000" src={item.images.portrait} alt={item.name} />)
+                            return(<img data-aos="slide-up" data-aos-duration="3000" src={item.images.portrait} alt={item.name} />)
                         else
                             return null;
                     })}

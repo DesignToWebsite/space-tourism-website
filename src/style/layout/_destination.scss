@@ -103,6 +103,12 @@
                     font-size: 100px;
                     line-height: 115px;
                     margin-bottom: 14px;
+                    @include small-screen{
+                        font-size: 70px;
+                    }
+                    @include x-small-screen{
+                        font-size: 10vw;
+                    }
                 }
                 p{
                     line-height: 32px;

@@ -25,7 +25,7 @@ export default function Crew() {
                     {crew.map(item => {
                         if (item.active) {
                             return (
-                                <div data-aos="slide-left" data-aos-duration="2000" className="item" key={item.id}>
+                                <div data-aos="slide-left" data-aos-duration="3000" className="item" key={item.id}>
                                     <h2>{item.role}</h2>
                                     <h1>{item.name}</h1>
                                     <p>{item.bio}</p>
@@ -54,7 +54,7 @@ export default function Crew() {
                 <div className="img">
                     {crew.map(item => {
                         if(item.active)
-                            return(<img data-aos="slide-left" data-aos-duration="2000" key={item.id} src={item.images.png} alt={item.name} />)
+                            return(<img data-aos="slide-left" data-aos-duration="3000" key={item.id} src={item.images.png} alt={item.name} />)
                         else
                             return null;
                     })}

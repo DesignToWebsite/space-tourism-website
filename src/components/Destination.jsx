@@ -23,7 +23,7 @@ export default function Destination() {
                 <div  className="img">
                     {dest.map(item => {
                         if(item.active)
-                            return(<img  data-aos="slide-right" data-aos-duration="2000" src={item.images.png} alt={item.name} />)
+                            return(<img  data-aos="slide-right" data-aos-duration="3000" src={item.images.png} alt={item.name} />)
                         else
                             return null;
                     })}
@@ -48,7 +48,7 @@ export default function Destination() {
                     {dest.map(item => {
                         if (item.active) {
                             return (
-                                <div data-aos="slide-left" data-aos-duration="2000" className="item">
+                                <div data-aos="slide-left" data-aos-duration="3000" className="item">
                                     <h1>{item.name}</h1>
                                     <p>{item.description} </p>
                                     <hr />
