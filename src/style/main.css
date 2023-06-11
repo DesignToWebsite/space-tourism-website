@@ -14,7 +14,6 @@ body {
 
 #root {
   width: 100vw;
-  height: fit-content;
 }
 
 ul {
@@ -235,7 +234,7 @@ nav.navbar .menu_item ul li a span {
   grid-template-columns: 1fr 1fr;
   height: 100%;
   align-items: center;
-  padding: 2em 3em;
+  padding: 2em 30px;
 }
 @media screen and (max-width: 991px) {
   .home {
@@ -290,7 +289,7 @@ nav.navbar .menu_item ul li a span {
   pointer-events: none;
   cursor: pointer;
   transition: all 1s ease;
-  width: 390px;
+  max-width: 390px;
   height: 390px;
   border-radius: 50%;
   padding: 0;
@@ -318,7 +317,7 @@ nav.navbar .menu_item ul li a span {
 
 .explore {
   color: white;
-  padding: 2em 3em;
+  padding: 2em 30px;
   transition: all 1s ease;
 }
 @media screen and (max-width: 768px) {
@@ -332,6 +331,12 @@ nav.navbar .menu_item ul li a span {
   letter-spacing: 4.7px;
   margin-left: 28px;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .explore h3 {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 .explore h3 span {
   opacity: 0.25;
@@ -378,6 +383,11 @@ nav.navbar .menu_item ul li a span {
     margin: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .explore .dest .content {
+    align-items: normal;
+  }
+}
 .explore .dest .content .nav_dest {
   font-family: "Barlow Condensed", sans-serif;
   margin-right: 35px;
@@ -388,6 +398,11 @@ nav.navbar .menu_item ul li a span {
     margin: 50px auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .explore .dest .content .nav_dest {
+    margin: 50px 0;
+  }
+}
 .explore .dest .content .nav_dest ul {
   margin: 0;
   padding: 0;
@@ -395,6 +410,13 @@ nav.navbar .menu_item ul li a span {
 @media screen and (max-width: 991px) {
   .explore .dest .content .nav_dest ul {
     margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .explore .dest .content .nav_dest ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 .explore .dest .content .nav_dest ul li {
@@ -409,6 +431,11 @@ nav.navbar .menu_item ul li a span {
 }
 .explore .dest .content .nav_dest ul li:hover, .explore .dest .content .nav_dest ul li.active {
   border-bottom: 2px solid white;
+}
+@media screen and (max-width: 768px) {
+  .explore .dest .content .nav_dest ul li {
+    margin-right: 0;
+  }
 }
 .explore .dest .content .item h1 {
   font-size: 100px;

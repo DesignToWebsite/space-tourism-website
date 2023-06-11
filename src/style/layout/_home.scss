@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     height: 100%;
     align-items: center;
-    padding: 2em 3em;
+    padding: 2em 30px;
     @include medium-screen{
         grid-template-columns: 1fr;
         align-items: center;
@@ -50,7 +50,7 @@
             pointer-events: none;
             cursor: pointer;
             transition: all 1s ease;
-            width: 390px;
+            max-width: 390px;
             height: 390px;
             border-radius: 50%;
             padding: 0;
