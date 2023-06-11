@@ -4,9 +4,10 @@ import Home from "./Home";
 import Destination from "./Destination";
 import Crew from "./Crew";
 import Technology from "./Technology";
-import '../style/main.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
+import '../style/main.css';
+
 
 AOS.init();
 
